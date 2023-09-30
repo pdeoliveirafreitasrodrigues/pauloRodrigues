@@ -9,11 +9,6 @@ export class AppComponent implements OnInit{
   title = 'pauloRodrigues';
   private nome: string;
 
-  // Caso o atributo for privado, o HTML não consegue acessar
-  //Chamei esse cara lá no HTML utilizando o {{}} do typeScript
-  public titulo: string = 'Paulo Violeiro';
-
-
   // É uma função específica do Angular. Ela carrega por primeiro before carregar a tela
   ngOnInit(): void {
     // sysout 
@@ -23,18 +18,6 @@ export class AppComponent implements OnInit{
     this.calculaJuros(500, 10, 1);
     this.contaVogaisEConsoantes('ameixxxaaaa')
   }
-
-
-  // Função de exemplo pra mexer no botão
-  funcao(): void{
-    const variavel: number = 10; // const para constantes
-    const texto: string = "texto";
-
-    let teste = 10; // let para quando variável alterada
-
-    console.log('Botão clicado!')
-  }
-
 
   private calculadoraMedia(num1: number, num2: number, num3: number) : void{
       let numbers: number[] = [num1, num2, num3]
