@@ -12,6 +12,9 @@ import { HomeRoutingModule } from './home-routing.module';
   imports: [
     CommonModule,
     HomeRoutingModule
+  ],
+  exports: [
+    HomeComponent
   ]
   //POR SER UMA PÁGINA, NÃO PRECISA EXPORTAR
 })

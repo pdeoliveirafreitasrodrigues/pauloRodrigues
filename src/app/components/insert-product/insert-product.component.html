@@ -1,0 +1,22 @@
+<form [formGroup]="formularioProduto">
+    <!-- formControlName = algum atributo que foi construido para o formulário-->
+    <input type="text" formControlName="name">
+    <input type="text" formControlName="description">
+    <input type="text" formControlName="code">
+    <input type="number" formControlName="costPrice">
+    <input type="number" formControlName="salePrice">
+    <input type="text" formControlName="preparationTime">
+    <select formControlName="productType">
+        <option value="SNACK">SNACK</option>
+        <option value="DRINK">DRINK</option>
+        <option value="DESSERT">DESSERT</option>
+    </select>
+    <button type="submit" (click)="enviarFormulario()">SALVAR</button>
+</form>
+
+<!--expression sempre vai ser um atributo da nossa classe (neste caso o "mostrar")-->
+<div>
+<button (click)="aparecerH5()">mostra ou não mostra</button>
+<h5> Condição do meu ngIf: {{mostrar}}</h5>
+<h5 *ngIf="mostrar">Teste com ngIf</h5>
+</div>

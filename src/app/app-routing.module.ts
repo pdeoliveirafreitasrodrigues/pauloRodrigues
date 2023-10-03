@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
+import { InsertProductComponent } from './components/insert-product/insert-product.component';
 //import {angulaExample} from '/Documents/GitHub/MeusProjetos/pauloRodrigues/src/app/angular'
 
 
@@ -12,7 +13,17 @@ const routes: Routes = [
 
   // 2 - CRIAR A ROTA DE HOME
   //     DEFINIÇÃO DE ROTA PARA PÁGINA
-  { path: 'home', component: HomeComponent}
+  { path: 'home',
+    loadChildren: () => 
+    import('./components/home/home.module').then((h) => h.HomeModule),
+},
+
+  { path: 'novo', 
+    loadChildren: () => 
+    import('./components/insert-product/insert-product.module').then(
+      (m) => m.InsertProductModule
+    ),
+  },
 
 
 ];

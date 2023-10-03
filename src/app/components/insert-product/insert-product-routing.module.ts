@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home.component';
+import { InsertProductComponent } from './insert-product.component';
+//import {angulaExample} from '/Documents/GitHub/MeusProjetos/pauloRodrigues/src/app/angular'
 
+
+// AQUI VÃO AS ROTAS
 const routes: Routes = [
-  { path: '', component: HomeComponent}
-  
 
-  // CASO TIVESSE FILHOS ESTARIAM AQUI
-  // { path: 'filho01', component: HomeComponent}
+  { path: '', component: InsertProductComponent}
 
 ];
 
@@ -17,7 +17,7 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class HomeRoutingModule { }
+export class insertProductRountingModule { }
 
 
 // PRINCIPAL ARQUIVO DE ROTEAMENTO PARA COMUNICAÇÃO ENTRE PÁGINAS
