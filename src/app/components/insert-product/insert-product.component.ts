@@ -33,6 +33,8 @@ export class InsertProductComponent implements OnInit {
     })
   }
 
+  public products: string[] = ['SNACK', 'DRINK', 'DESSERT'];
+
   enviarFormulario(){
     console.log(this.formularioProduto.value)
   }

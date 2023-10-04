@@ -2,3 +2,9 @@
 // Arquivo global de estilo
 // um scss por componente
 // estilo será local
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
